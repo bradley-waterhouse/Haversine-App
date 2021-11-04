@@ -1,2 +1,0 @@
-# Haversine-App
-Test Answers
