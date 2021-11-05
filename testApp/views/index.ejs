@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<head>
+	<title>Test App</title>
+	<% include head %>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Test</h1>
+			</div>
+				<div class="col-sm-12">
+          <% parsedData.forEach((user) => { %>
+            <% const userFullname = user.first_name+' '+user.last_name %>
+            <%= userFullname  %>
+          <%}) %> 
+			</div>
+		</div>
+	</div>
+</body>
 </html>
